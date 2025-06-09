@@ -5,7 +5,7 @@ const Job = require('./models/Job'); // Import the model
 
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 // Middleware
 app.use(cors()); // Allow requests from frontend origin
