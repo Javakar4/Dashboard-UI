@@ -80,7 +80,7 @@ const JobDialog = ({ open, handleClose }) => {
 
   const handleSubmit = async () => {
   try {
-    const response = await fetch('https://dashboard-backend-gtlw.onrender.com', {
+    const response = await fetch('https://dashboard-backend-gtlw.onrender.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(jobDetails),
