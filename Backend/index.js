@@ -14,7 +14,7 @@ app.use(express.json()); // Parse JSON body
 
 
 // MongoDB connection
-mongoose.connect('https://dashboard-backend-gtlw.onrender.com/api/joblist', {
+mongoose.connect('mongodb://localhost:27017/dashboardDB', {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
 })
